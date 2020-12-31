@@ -6,8 +6,16 @@
     },
     "license": "MIT",
     "repository": "github:giuliopft/cam",
-    "version": "1.0",
+    "version": "1.0.0",
     "description": "A Cards Against Humanity clone.",
-    "main": "src/main.js",
-    "private": true
+    "main": "src/app.mjs",
+    "private": true,
+    "scripts": {
+        "start": "node src/app.mjs"
+    },
+    "dependencies": {
+        "bimap": "0.0.15",
+        "express": "^4.17.1",
+        "vue": "^2.6.12"
+    }
 }
