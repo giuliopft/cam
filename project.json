@@ -1,0 +1,13 @@
+{
+    "name": "cards-against-mankind",
+    "author": {
+        "name": "giuliopft",
+        "email": "giuliopft@gmail.com"
+    },
+    "license": "MIT",
+    "repository": "github:giuliopft/cam",
+    "version": "1.0",
+    "description": "A Cards Against Humanity clone.",
+    "main": "src/main.js",
+    "private": true
+}
