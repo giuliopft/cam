@@ -6,8 +6,8 @@ import { User } from './backend/user';
 
 const app = express();
 const port = 41726;
-const users : Set<User> = new Set();
-export const games : Set<Game> = new Set();
+const users: Set<User> = new Set();
+export const games: Set<Game> = new Set();
 
 app.use(express.static(__dirname + '/static'));
 

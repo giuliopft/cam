@@ -16,7 +16,7 @@
         "all": "npm run-script build && npm run-script start"
     },
     "dependencies": {
-        "bimap": "0.0.15",
+        "@jsdsl/bimap": "^0.1.1",
         "express": "^4.17.1",
         "vue": "^2.6.12"
     },
