@@ -12,7 +12,7 @@
     "private": true,
     "scripts": {
         "start": "node build/app.js",
-        "build": "tsc --project ./ && cp -r src/static/ build/",
+        "build": "tsc --project ./ && rsync -av --progress src/static/ build/static/ --exclude javascripts",
         "all": "npm run-script build && npm run-script start"
     },
     "dependencies": {
