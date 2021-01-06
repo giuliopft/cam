@@ -1,0 +1,82 @@
+@use 'colors';
+
+@font-face {
+    font-family: Rubik;
+    src: url(../fonts/Rubik.ttf);
+}
+
+html {
+    font-family: Rubik;
+}
+
+body {    
+    margin: 0;
+    padding: 0;
+}
+
+.page-header {
+    text-align: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.page-title {
+    background-color: colors.$primary-color;
+}
+
+.page-subtitle {
+    background-color: colors.$primary-color-d;
+}
+
+.page-footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: colors.$secondary-color;
+    color: colors.$footer-text;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    font-size: small;
+}
+
+h1 {
+    color: #000000;
+    font-weight: bold;
+    font-size: xx-large;
+    margin: 0;
+}
+
+h2 {
+    color: #000000;
+    font-weight: normal;
+    font-size: medium;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.footer-link {
+    color: colors.$footer-text;
+    text-decoration: underline;
+}
+
+.footer-link:hover {
+    font-weight: bold;
+}
+
+.invisible-link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.invisible-link:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
