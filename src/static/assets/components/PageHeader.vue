@@ -12,7 +12,7 @@
           target="_blank"
           >Cards Against Humanity</a
         >
-        clone
+        clone{{ info }}
       </h2>
     </div>
   </div>
@@ -21,7 +21,9 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      info: ``
+    }
   },
 };
 </script>

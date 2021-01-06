@@ -15,8 +15,8 @@
         "build-backend": "tsc --project ./",
         "wd": "webpack --config webpack.dev.js",
         "wp": "webpack --config webpack.prod.js",
-        "buildd": "rm -r ./build && npm run build-backend && npm run wd",
-        "buildp": "rm -r ./build && npm run build-backend && npm run wp",
+        "buildd": "rm -rf ./build && npm run build-backend && npm run wd",
+        "buildp": "rm -rf ./build && npm run build-backend && npm run wp",
         "alld": "npm run buildd && npm run start",
         "allp": "npm run buildp && npm run start"
     },

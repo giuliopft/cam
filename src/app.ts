@@ -13,7 +13,7 @@ export const games: BiMap<Game, string> = new BiMap();
 app.use(express.static(__dirname + '/static'));
 
 app.listen(port, () => {
-    console.log(`Yey! ${port}`)
+    console.log(`Server running on port ${port}`)
 })
 
 function generateUserToken(): string {

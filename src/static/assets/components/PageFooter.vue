@@ -25,11 +25,7 @@ export default {
 
 #page-footer {
   text-align: center;
-  position: sticky;
-  position: -webkit-sticky;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  height: min-content;
   background-color: colors.$secondary-color;
   color: colors.$footer-text;
   padding-bottom: 1px;

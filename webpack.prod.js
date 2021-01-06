@@ -18,5 +18,5 @@ module.exports = merge(common, {
         path: path.resolve(__dirname, "build/static"),
         publicPath: "",
     },
-    plugins: [new MiniCssExtractPlugin({ filename: `style.[hash].css`})]
+    plugins: [new MiniCssExtractPlugin({ filename: `style-[hash].css`})]
 });

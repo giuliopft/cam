@@ -1,13 +1,9 @@
 import "./assets/stylesheets/global.scss";
 import Vue from 'vue';
-import PageHeader from './assets/components/page-header.vue';
-import PageFooter from './assets/components/page-footer.vue'
+import App from './App.vue'
 
 new Vue({
-    el: '#page-header',
-    render: h => h(PageHeader),
-});
-new Vue({
-    el: '#page-footer',
-    render: h => h(PageFooter),
+    el: '#app',
+    template: '<App/>',
+    components: { App }
 })

@@ -40,4 +40,9 @@ module.exports = {
     plugins: [new HtmlWebpackPlugin({
         template: "./src/static/template.html"
     }), new VueLoaderPlugin()],
+    resolve: {
+        alias: {
+            'vue$': 'vue/dist/vue.esm.js'
+        }
+    }
 }
