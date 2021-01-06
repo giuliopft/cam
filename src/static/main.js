@@ -1,8 +1,8 @@
-import "./stylesheets/global.scss";
-alert(`Test`)
-var app = new Vue({
-    el: '#hp',
-    data: {
-        planet: 'Mars'
-    }
+import "./assets/stylesheets/global.scss";
+import Vue from 'vue';
+import PageHeader from './assets/components/page-header.vue'
+
+new Vue({
+    el: '#page-header',
+    render: h => h(PageHeader),
 })
