@@ -4,7 +4,16 @@
       <h1>CARDS AGAINST MANKIND</h1>
     </div>
     <div id="page-subtitle">
-      <h2>A <a href="https://www.cardsagainsthumanity.com" class="invisible-link" target="_blank">Cards Against Humanity</a> clone</h2>
+      <h2>
+        A
+        <a
+          href="https://www.cardsagainsthumanity.com"
+          class="invisible-link"
+          target="_blank"
+          >Cards Against Humanity</a
+        >
+        clone
+      </h2>
     </div>
   </div>
 </template>
@@ -21,19 +30,19 @@ export default {
 @use '../stylesheets/colors';
 
 #page-header {
-    text-align: center;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    left: 0;
-    right: 0;
+  text-align: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 #page-title {
-    background-color: colors.$primary-color;
+  background-color: colors.$primary-color;
 }
 
 #page-subtitle {
-    background-color: colors.$primary-color-d;
+  background-color: colors.$primary-color-d;
 }
 </style>
