@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" @change="changeHeight()">
     <page-header ref="header" />
     <div id="content-and-footer">
       <div id="content">
@@ -13,6 +13,9 @@
 import PageFooter from "./assets/components/PageFooter.vue";
 import PageHeader from "./assets/components/PageHeader.vue";
 export default {
+  mounted() {
+    this.changeHeight();
+  },
   components: {
     'page-header': PageHeader,
     'page-footer': PageFooter
@@ -23,6 +26,13 @@ export default {
   methods: {
     updateInfoInPageHeader(status) {
       this.$refs.header.info = status ? ` - ${status}` : ``;
+    },
+    changeHeight() {
+      if (document.body.scrollHeight > document.body.clientHeight) {
+        document.getElementById("app").style.height = `initial`;
+      } else {
+        document.getElementById("app").style.height = `100%`;
+      }
     }
   }
 };
@@ -30,7 +40,6 @@ export default {
 
 <style lang="scss">
 #app {
-  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
