@@ -33,6 +33,10 @@ export default {
       } else {
         document.getElementById("app").style.height = `100%`;
       }
+    },
+  },
+  sockets: {
+    connect() {
     }
   }
 };

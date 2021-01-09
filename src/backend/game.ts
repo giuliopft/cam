@@ -9,7 +9,7 @@ interface Settings {
     readonly maxScore: number;
 }
 
-class Player {
+export class Player {
     readonly user: User;
     private _score: number = 0;
     readonly whiteCards: WhiteCard[] = [];
@@ -41,7 +41,7 @@ class Player {
     }
 }
 
-class Round {
+export class Round {
     readonly czar: Player;
     readonly blackCard: BlackCard;
     readonly whiteCards: Map<Player, WhiteCard[]>

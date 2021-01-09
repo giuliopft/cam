@@ -4,10 +4,10 @@ import { RGBColor } from "./utils";
 
 export class Avatar {
     readonly skin: RGBColor;
-    readonly eyes: RGBColor;
-    readonly mouth: RGBColor;
+    readonly eyes: number;
+    readonly mouth: number;
 
-    constructor(skin: RGBColor, eyes: RGBColor, mouth: RGBColor) {
+    constructor(skin: RGBColor, eyes: number, mouth: number) {
         this.skin = skin;
         this.eyes = eyes;
         this.mouth = mouth;
